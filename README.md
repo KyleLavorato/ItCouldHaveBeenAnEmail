@@ -44,11 +44,13 @@ This will start a webserver on port 3000 in the local machine. The add-in should
 
 #### Webserver (Production)
 
-For widespread use of the add-in, a centralized web host must be setup. There is a wide range of possible setups. The only requirement is that the `html` files in this repository are hosted (with JavaScript enabled), and the `asset` files are also available.
+For widespread use of the add-in, a centralized web host must be setup. There is a wide range of possible setups. The only requirement is that the `html` files in this repository are hosted (with JavaScript enabled), and the `asset` files are also available. To build the webserver package, run the command:
 
-The `manifest.xml` file is an example of the add-in with a dedicated webserver host. This file will need to be modified to have all the `URLs` changed to the webserver in your organization.
+```bash
+npm run build
+```
 
-> There is no example persistent host of this add-in. It must be self-hosted.
+The `manifest.xml` file is an example of the add-in with a dedicated webserver host. An working version of this content is hosted in the GutHub pages for this repository. This file will need to be modified to have all the `URLs` changed to the webserver in your organization if a dedicated host is created.
 
 ## Booking Meetings with the Add-in
 
